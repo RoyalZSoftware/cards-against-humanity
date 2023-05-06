@@ -8,7 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Card text={"Hallo Alex"} />
+        <Card isWhiteCard={false} text={"Alex likes to ____ but only when _____."} onSelectedCallback={() => console.log("Selected Card")}/>
+        <Card isWhiteCard={true} text={"His mom is watching"} />
         <p>
         </p>
         <a
