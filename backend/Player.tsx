@@ -2,12 +2,10 @@ import Game from './Game';
 import WhiteCard from './WhiteCard';
 
 class Player {
-  private _name: string;
   private _id: string;
   private _currentGame: Game;
 
-  constructor(name: string) {
-    this.name = name
+  constructor(private _name: string) {
     this._id = randomId();
   }
 
@@ -31,7 +29,7 @@ class Player {
     this._currentGame?.currentRound?.results[this._id]
   }
 
-  pickWinner(whiteCard: WhiteCards) {
+  pickWinner(whiteCard: WhiteCard[]) {
     this._currentGame?.currentRound ?
   }
 }
